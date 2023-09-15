@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="commonUtils.ExtentListeners"/>
+    </listeners>
+
+    <parameter name = "environment" value="${testEnvironment}"/>
+    <parameter name = "device" value="${testEnvironment}"/>
+
+    <test name="ServiceFlow">
+        <packages>
+            <package name="testSuite.ServiceFlow"></package>
+        </packages>
+    </test>
+</suite>
